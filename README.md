@@ -83,6 +83,10 @@ Das Programm läuft problemlos im Hintergrund weiter und speichert Messdaten, se
 ## Datenauswertung
 Die Messdaten werden im Unterverzeichnis `Feinstaubsensor` im *Internen Speicher* des Handys gespeichert. Schließt man sein Handy wieder über den USB an den PC an, so lassen sich die Daten sehr einfach übertragen bzw. sofort in Google Earth öffnen.
 
+## Android Energieoptionen
+Wir haben eine ganze Reihe von fehlerfreien Dauerlauftests mit einem Samsung S4 Active (Android 5.0.1) durchgeführt. Dennoch ist die App auf moderneren Handys immer wieder vom System beendet worden.
+Daher sollte man bei neueren Android-Versionen (> 5) in den Systemeinstellungen die **Akku Optimierung** für die QPython App  auf **Ignorieren** stellen, damit die App auch im Hintergund weiterlaufen darf und nicht vom System gestoppt wird. Falls diese Maßnahmen ebenfalls nicht helfen, bitte das Problem hier als Issue mit Fehlermeldung und Logfiles sowie der genauen Angabe von Handy und Android-Version melden - Danke!  
+
 ## SDS011-Mock
 Wenn man noch auf die Lieferung seines SDS011 Sensors wartet oder das Zusammenspiel der Komponenten testen möchte, kann man einen *Mock*, d.h. eine Ersatzkomponente für den Sensor bauen, die schnittstellenkompatibel ist. Hierzu kann z.B. ein Arduino Nano verwendet werden, dessen serielles Interface mit dem HC-06 verbunden wird. Das passende Arduino-Programm ist im Verzeichnis [SDS011_Mock](SDS011_Mock/SDS011_Mock.ino) abgelegt.
 
