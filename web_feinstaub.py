@@ -244,7 +244,11 @@ class GpsdStreamReader(threading.Thread):
 		while t_gps.running:
 			# Lese den naechsten Datensatz von GPSD
 			if android_platform:
-				g_lat, g_lng = self.getGpsData()
+				try:
+					g_lat, g_lng = self.getGpsData()	
+				except Exception, e:
+					g_lat, g_lng = -1.0, -1.0
+					write_log("Kann keine GPS-Position ermitteln: " + str(e))
 				time.sleep(5)
 			else:
 				session.next()	  

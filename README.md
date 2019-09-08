@@ -79,6 +79,7 @@ Drückt man nun im Hauptmenü von QPython wieder auf das gelbe Quadrat, so ersch
 ![Android-Programmlauf](Android-Programmlauf.jpg)
 
 Das Programm läuft problemlos im Hintergrund weiter und speichert Messdaten, selbst wenn man das Handy für andere Zwecke nutzt. Über die für die für das jeweilige Androidsystem typischen Gesten kann man das Programm durch Termierung der QPython-App beenden.
+__Ganz wichtig ist, dass man in den Akku-/Stromspareinstellungen des Systems eine Ausnahme für die QPython-App einträgt, sonst wird dem Feinstaubsensor nach wenigen Minuten Laufzeit im Hintergrund der Saft abgedreht und es hagelt Exceptions.__
 
 ## Datenauswertung
 Die Messdaten werden im Unterverzeichnis `Feinstaubsensor` im *Internen Speicher* des Handys gespeichert. Schließt man sein Handy wieder über den USB an den PC an, so lassen sich die Daten sehr einfach übertragen bzw. sofort in Google Earth öffnen.
